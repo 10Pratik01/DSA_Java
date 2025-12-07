@@ -89,9 +89,9 @@ class FinalOutput{
         System.out.println("The length of the string is : "+ lenght);
         boolean isPlaindrome; 
 
-        if(lenght % 2 == 0){
+        
             isPlaindrome = obj.isPlaindrome(element);
-        }else { isPlaindrome = false; }
+        
          
         if(isPlaindrome) System.out.println("String is a Palindrome");
         else System.out.println("String is not in palindrome"); 
