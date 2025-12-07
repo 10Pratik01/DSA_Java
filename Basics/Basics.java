@@ -17,15 +17,16 @@ class Methods {
     static String CheckPrime(int input){
         String result= "No"; 
          if(input <= 1 || input == 2 ){
-            result = "Yes";  
+            return result = "Yes";  
+
          }else if (input % 2 == 0 ){
-            result = "No"; 
+            return result = "No"; 
          } else {
             for(int i = 3; i * i <= input; i+=2){
                 if(input % i == 0){
-                    result = "No"; 
+                    return result = "No"; 
                 }else{
-                    result = "Yes"; 
+                    return result = "Yes"; 
                 }
             }
          }
@@ -70,11 +71,11 @@ class Methods {
 class FinalOutput{
 
     static void Output(int number){
-        String isPrime = Methodes.CheckPrime(number);
-        String oddOrEven = Methodes.CheckEvenOdd(number); 
+        String isPrime = Methods.CheckPrime(number);
+        String oddOrEven = Methods.CheckEvenOdd(number); 
                 
         // creating a obj for practice and class is non static
-        Methodes obj = new Methodes(); 
+        Methods obj = new Methods(); 
         int factorial = obj.Factorial(number, 1); 
         System.out.println("Is the number prime ? " + isPrime);
         System.out.println("Is number odd or even? The number is = " + oddOrEven );
@@ -84,7 +85,7 @@ class FinalOutput{
 
 
     static void Output(String element){
-        Methodes obj = new Methodes(); 
+        Methods obj = new Methods(); 
         int lenght = element.length(); 
         System.out.println("The length of the string is : "+ lenght);
         boolean isPlaindrome; 
@@ -127,7 +128,7 @@ public class Basics {
             // check if the input is string or int if int then convert the string to the int
             String element = arr.get(i); 
             
-            Integer valid = Methodes.toCheckValidInt(element); 
+            Integer valid = Methods.toCheckValidInt(element); 
             int number;
 
             if(valid != null){
