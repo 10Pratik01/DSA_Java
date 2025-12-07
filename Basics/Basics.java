@@ -3,7 +3,7 @@ package Basics;
 import java.util.*;
 
 
-class Methodes { 
+class Methods { 
 
     static Integer toCheckValidInt(String input){
         try {
